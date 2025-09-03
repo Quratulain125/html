@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Grand Hotel</title>
+</head>
+<body>
+    <h1>Welcome to Grand Hotel</h1>
+    <p>Experience luxury and comfort like never before!</p>
+
+    <h2>About Our Hotel</h2>
+    <p>Grand Hotel is known for its world-class hospitality and comfortable rooms.</p>
+    <ul>
+        <li>24/7 Room Service</li>
+        <li>Free Wi-Fi</li>
+        <li>Swimming Pool & Gym</li>
+        <li>Luxury Dining</li>
+    </ul>
+
+    <h2>Available Rooms</h2>
+    <table border="1">
+        <tr>
+            <th>Room Type</th>
+            <th>Price per Night</th>
+            <th>Facilities</th>
+        </tr>
+        <tr>
+            <td>Single Room</td>
+            <td>$100</td>
+            <td>1 Bed, Free Wi-Fi, TV</td>
+        </tr>
+        <tr>
+            <td>Double Room</td>
+            <td>$180</td>
+            <td>2 Beds, Free Wi-Fi, TV, Mini-Bar</td>
+        </tr>
+        <tr>
+            <td>Suite</td>
+            <td>$300</td>
+            <td>Luxury Bed, Living Area, Free Wi-Fi, TV, Jacuzzi</td>
+        </tr>
+    </table>
+
+    <h2>Book Your Stay</h2>
+    <form>
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin"><br><br>
+
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout"><br><br>
+
+        <label for="room-type">Room Type:</label><br>
+        <select id="room-type" name="room-type">
+            <option value="">-- Select a Room --</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests"><br><br>
+
+        <label for="requests">Special Requests:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="50" placeholder="Any additional requests..."></textarea><br><br>
+
+        <label>Payment Method:</label><br>
+        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+        <label for="credit-card">Credit Card</label><br>
+        <input type="radio" id="paypal" name="payment-method" value="paypal">
+        <label for="paypal">PayPal</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Reset">
+    </form>
+
+    <footer>
+        <p>© 2025 Grand Hotel | <a href="#">Visit Our Website</a></p>
+    </footer>
+</body>
+</html>
